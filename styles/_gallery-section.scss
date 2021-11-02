@@ -1,0 +1,28 @@
+.gallery-section {
+  display: flex;
+  flex-wrap: wrap;
+
+  .img-desktop {
+    display: none;
+    width: 100%;
+  }
+
+  .img-mobile {
+    width: 50%;
+    display: flex;
+    flex: 50%;
+  }
+}
+
+@media screen and (min-width: 1340px) {
+  .gallery-section {
+    .img-mobile {
+      display: none;
+    }
+
+    .img-desktop {
+      display: flex;
+      width: 25%;
+    }
+  }
+}
